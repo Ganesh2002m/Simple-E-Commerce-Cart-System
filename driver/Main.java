@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+package driver;
+
 import java.util.Scanner;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
@@ -7,19 +7,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 import model.Product;
-import model.CartItem;
+import shopping.ShoppingCart;
+import exceptionhandling.ProductUnavailableException;
 
-
-
-class ShoppingCart {
-
-}
-
-class ProductUnavailableException extends Exception {
-    public ProductUnavailableException(String message) {
-        super(message);
-    }
-}
 
 public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
